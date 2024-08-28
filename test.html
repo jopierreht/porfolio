@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        /* Basic CSS reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #fff; /* White background */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+        }
+
+        /* Copyright text styling */
+        .footer .copyright a {
+            text-decoration: none;
+            color: #000; /* Black text color */
+            font-size: 16px;
+        }
+
+        /* Social media icons container styling */
+        .footer .social ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Individual social media icon styling */
+        .footer .social ul li {
+            margin-left: 10px; /* Little distance between icons */
+        }
+
+        /* Icon styling */
+        .footer .social ul li a img {
+            width: 24px; /* Same size for all icons */
+            height: 24px;
+            transition: transform 0.2s; /* Smooth hover effect */
+        }
+
+        /* Hover effect on social media icons */
+        .footer .social ul li a:hover img {
+            transform: scale(1.1); /* Slightly larger on hover */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .footer {
+                flex-direction: column; /* Stack vertically on smaller screens */
+                text-align: center;
+            }
+
+            .footer .copyright {
+                margin-bottom: 10px;
+            }
+
+            .footer .social ul {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer">
+            <div class="copyright">
+                <a href="index.html" alt="Home">© 2024 Josué Pierre - All right reserved!</a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a target="_blank" href="https://instagram.com/jopierreht">
+                        <img src="img/ig_round.svg" alt="Follow me on Instagram">
+                    </a></li>
+                    <li><a target="_blank" href="https://facebook.com/jopierreh">
+                        <img src="img/fb.svg" alt="Follow me on Facebook">
+                    </a></li>
+                    <li><a target="_blank" href="https://x.com/jopierreHT">
+                        <img src="img/x.svg" alt="Follow me on X">
+                    </a></li>
+                    <li><a target="_blank" href="https://linkedin.com/in/jopierreht">
+                        <img src="img/in.svg" alt="Let's connect on LinkedIn">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

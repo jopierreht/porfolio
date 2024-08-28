@@ -1,0 +1,385 @@
+
+.font-header {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+  color: #AA076B
+}
+
+.shape{
+  position: relative;
+  width: 750px;
+  height: auto;
+  margin: 10px;
+  padding: 6px;
+  border: 2px solid black;
+  border-radius: 30px 0 30px 0;
+  box-shadow: 3px 3px 3px rgb(60, 61, 61);
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.one{
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.button {
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+}
+img:hover{
+  color:#fbe6ff;
+  opacity: 0.7;
+}
+
+img.rounded{
+  border-radius: 180px 0px 180px 0px;
+}
+
+a{
+  display: inline;
+}
+
+a:hover{
+  color:#61045F;
+  cursor: pointer;
+}
+
+a:active{
+  text-decoration: #AA076B;
+}
+h1 {
+font-size: 5em;
+text-align: center;
+color: white;
+padding: 150px;
+text-shadow: 1px 1px 0px #b8b9bb; 
+/*
+background-image: url(img/bird.jpg);
+background-size: cover;
+background-position: center;
+position: center;
+opacity: 1; 
+*/
+background: radial-gradient(#AA076B, #61045F);
+}
+
+body{
+  background-color: #fbe6ff;
+}
+
+/* For paragraphs */
+p, h1, h2, a, li, img {
+font-family: "Space Grotesk", sans-serif;
+}
+
+p{
+  margin: 50px;
+  padding: 10px;
+}
+
+/* Basic CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* Basic CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Header styling */
+header {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  background-color: #000; /* Black background */
+  width: 100%;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo styling */
+.logo a img {
+  display: block;
+}
+
+/* Menu styling */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff; /* White text */
+  font-size: 16px;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect on menu items */
+.menu ul li a:hover {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+}
+
+/* Menu toggle (hamburger) */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff; /* White color */
+}
+
+/* Menu slide-in styling */
+.menu-slide {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #000;
+  padding-top: 60px; /* To avoid overlap with the header */
+  z-index: 1001; /* Ensure it's above other content */
+  flex-direction: column;
+  align-items: start;
+}
+
+.menu-slide ul {
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-slide ul li {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+}
+
+.menu-slide ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px 35px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.menu-slide ul li a:hover{
+  color: gray;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+      justify-content: space-between;
+  }
+
+  .menu {
+      display: none;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .menu-slide.show {
+      display: flex;
+  }
+
+  .logo a img {
+      width: 120px; /* Resize logo for mobile */
+  }
+}
+
+        /* Footer styling */
+        .footer {
+          background-color: #fff; /* White background */
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+          bottom: 0;
+      }
+
+      /* Copyright text styling */
+      .footer .copyright a {
+          text-decoration: none;
+          color: #000; /* Black text color */
+          font-size: 16px;
+      }
+
+      /* Social media icons container styling */
+      .footer .social ul {
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+      }
+
+      /* Individual social media icon styling */
+      .footer .social ul li {
+          margin-left: 10px; /* Little distance between icons */
+      }
+
+      /* Icon styling */
+      .footer .social ul li a img {
+          width: 24px; /* Same size for all icons */
+          height: 24px;
+          transition: transform 0.2s; /* Smooth hover effect */
+      }
+
+      /* Hover effect on social media icons */
+      .footer .social ul li a:hover img {
+          transform: scale(1.1); /* Slightly larger on hover */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+          .footer {
+              flex-direction: column; /* Stack vertically on smaller screens */
+              text-align: center;
+          }
+
+          .footer .copyright {
+              margin-bottom: 10px;
+          }
+
+          .footer .social ul {
+              justify-content: center;
+          }
+        }
+
+
+
+
+/* About page styling */
+
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the container */
+  border-radius: 10px;
+}
+
+.shape {
+  padding: 20px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  flex: 1 1 calc(33.333% - 40px); /* Flexible width with gap consideration */
+  min-width: 150px; /* Ensure the shapes are flexible */
+  border: 1px solid transparent; /* Transparent border */
+}
+
+.shape h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.shape ul {
+  list-style: none;
+}
+
+.shape ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+  
+  .shape {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      margin-bottom: 20px; /* Add some space between shapes */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2em;
+  }
+
+  .shape h2 {
+      font-size: 1.3em;
+  }
+
+  .shape {
+      padding: 15px;
+  }
+
+  p {
+      font-size: 0.9em;
+  }
+}

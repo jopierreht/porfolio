@@ -1,0 +1,11 @@
+/* Test */
+.banner{
+    background: linear-gradient(to right,#000046, #1CB5E0);
+  }
+  /*
+  background-color: linear(to right,#000046, #1CB5E0);
+  
+  background: linear-gradient(to left, #1CB5E0, #000046);
+  
+  background: linear-gradient(to right,#000046, #1CB5E0);
+  */
